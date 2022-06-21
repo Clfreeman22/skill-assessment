@@ -1,0 +1,149 @@
+/* 
+Black: #000
+White: #fff
+Red: #de041c 
+*/
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body, html {
+    height: 100%;
+    margin: 0
+}
+.hero {
+    background-image: url("./images/heroimg.jpg");
+    background-size: cover;
+    background-position: center;
+    height:95%;
+}
+.title{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title p:nth-child(1) {
+    color: #de041c;
+    font-weight:900;
+    text-shadow: 4px 0px #de041c;
+    letter-spacing: 0px;
+    font-size: 5vw;
+    margin: 0;
+    text-align: center;
+    line-height: .8;
+}
+.title p:nth-child(2) {
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 2px 0px #fff;
+    letter-spacing: 0px;
+    font-size: 3vw;
+    margin: 0;
+    line-height: .8;
+}
+.title p:nth-child(3) {
+    color: #fff;
+    font-weight: 300;
+    margin: 2vw 0px 0px 0px;
+    text-align: center;
+    width: 38vw;
+}
+.border {
+    display: flex;
+    height: 3vw;
+    background-color: #de041c;
+    align-items: center;
+    justify-content: center;
+}
+.player {
+    min-width: 320px;
+    min-height: 160px;
+    height: 20.5vw;
+    width: 39.5vw;
+}
+.content {
+    display: flex;
+
+}
+.gallery {
+    margin-top: 10px;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 9vw 20vw 20vw;
+    grid-template-rows: 154px 263px 289px;
+    gap: 10px
+}
+.img-1 {
+    grid-column-end: 2;
+}
+.img-2 {
+    grid-row-start: 3;
+}
+.img-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    margin-left: 4px;
+
+}
+.col-2 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    gap:10px;
+}
+.img-4 {
+    margin-left: 4px;    
+}
+.img-5 {
+    margin: 5px 0px 0px 4px;
+}
+.welcome{
+    position: relative;
+    width: 50vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome::before{
+    content: "";
+    background-image: url(./images/watermark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.welcome-note p:nth-child(1){
+    color: #000;
+    font-weight: 900;
+    text-shadow: 2px 0px #000;
+    font-size: large;
+    letter-spacing: 2px;
+    margin:0px 0px 0px 50px;
+    line-height: .8;
+
+}
+.welcome-note p:nth-child(2){
+    color: #de041c;
+    font-weight: 900;
+    font-size: xx-large;
+    text-shadow: 2px 0px #de041c;
+    margin:0px 0px 0px 50px;
+    line-height: .8;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #000;
+}
+.welcome-details{
+    font-size: small;
+    margin:20px 20px 0px 50px;  
+}
+.welcome-details p:nth-child(3){
+    color:#de041c;
+    font-weight: bold;
+}
